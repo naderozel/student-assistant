@@ -1,0 +1,7 @@
+streamlit
+groq
+deep-translator
+Pillow
+PyPDF2
+numpy
+edge-tts
