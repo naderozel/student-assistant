@@ -449,7 +449,5 @@ elif tool == "🎙️ audio to text":
             st.audio(audio_bytes, format="audio/mp3")
         else:
             st.warning("write your text first")
-else:
-    st.warning("Please select a tool from the sidebar.")
 
 
