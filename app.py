@@ -27,9 +27,7 @@ if tool == " Chatbot":
     st.header("Chatbot")
     
     client = Groq(api_key=st.secrets["Groq_API_Key"])
-
-    
-
+    client = Groq(api_key="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")
 
     
     audio = st.audio_input("Record...")
@@ -106,6 +104,7 @@ if tool == " Chatbot":
 elif tool == "📄PDF Summarize":
     st.header("📄PDF Summarize")
     client = Groq(api_key=st.secrets["Groq_API_Key"])
+    client = Groq(api_key="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")
 
     uploaded_file = st.file_uploader("أو ارفع ملف PDF", type=["pdf"])
     if uploaded_file is not None:
@@ -274,7 +273,7 @@ elif tool == "🌐Translator":
 
 elif tool == "🎙️ Extract Text from Audio, Video & YouTube":
     client = Groq(api_key=st.secrets["GROQ_API_KEY"])
-    #client = Groq(api_key="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")
+    client = Groq(api_key="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")
 
     def transcribe_audio_file(path):
         with open(path, "rb") as f:
