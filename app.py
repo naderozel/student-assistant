@@ -10,6 +10,7 @@ import json
 import shutil
 import re
 
+
 from PIL import Image, ImageFilter
 from deep_translator import GoogleTranslator
 import edge_tts
@@ -24,7 +25,9 @@ tool = st.sidebar.radio("Choose a tool:", [" Chatbot", "📄PDF Summarize", "�
 
 if tool == " Chatbot":
     st.header("Chatbot")
-    client = Groq(api_key=st.secrets["GROQ_API_KEY"])
+    
+    client = Groq(api_key=st.secrets["Groq_API_Key"])
+
     
 
 
@@ -103,6 +106,7 @@ if tool == " Chatbot":
 elif tool == "📄PDF Summarize":
     st.header("📄PDF Summarize")
     client = Groq(api_key=st.secrets["Groq_API_Key"])
+
     uploaded_file = st.file_uploader("أو ارفع ملف PDF", type=["pdf"])
     if uploaded_file is not None:
         pdf_reader = PyPDF2.PdfReader(io.BytesIO(uploaded_file.read()))
