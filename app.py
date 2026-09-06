@@ -414,19 +414,18 @@ elif tool == "🎙️ audio to text":
     st.header("🎙️ Audio to Text")
     text = st.text_area("Write text here")
 
-    lang = st. selectbox("Choose language", ["عربي", "English"])
+    lang = st.selectbox("Choose language", ["عربي", "English"])
 
     voices = {
         "عربي": {
-            
             " زارية (امرأة - السعودية)": "ar-SA-ZariyahNeural",
-            " شاكر (رجل - مصر)":         "ar-EG-ShakirNeural",
-            " سلمى (امرأة - مصر)":       "ar-EG-SalmaNeural",
+            " شاكر (رجل - مصر)": "ar-EG-ShakirNeural",
+            " سلمى (امرأة - مصر)": "ar-EG-SalmaNeural",
         },
         "English": {
-            " غاي (رجل - أمريكا)":       "en-US-GuyNeural",
-            " جيني (امرأة - أمريكا)":    "en-US-JennyNeural",
-            " رايان (رجل - بريطانيا)":   "en-GB-RyanNeural",
+            " غاي (رجل - أمريكا)": "en-US-GuyNeural",
+            " جيني (امرأة - أمريكا)": "en-US-JennyNeural",
+            " رايان (رجل - بريطانيا)": "en-GB-RyanNeural",
             " ليبي (امرأة - بريطانيا)": "en-GB-LibbyNeural",
         },
     }
