@@ -30,7 +30,7 @@ tool = st.sidebar.radio("Choose a tool:", [
     "📸image editor",
     "🌐Translator",
     "🎙️ Extract Text from Audio, Video & YouTube",
-    "🎙️ Audio to Text"
+    "🎙️ Text to Speech"
 ])
 
 # CHATBOT
@@ -484,7 +484,7 @@ elif tool == "🎙️ Extract Text from Audio, Video & YouTube":
                     st.error(f"Error: {e}")
 
 # TEXT TO SPEECH
-elif tool == "🎙️ Audio to Text":
+elif tool == "🎙️ Text to Speech":
     st.header("🎙️ Text to Speech")
 
     text = st.text_area("Write text here")
